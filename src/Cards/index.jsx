@@ -92,17 +92,17 @@ function Cards() {
               )}
       <div>
         <h2>Você deve causar mais dano que o ataque do dragão</h2>
-        <button type="button" style={{ width: '300px', border: 'none', backgroundColor: 'transparent' }} onClick={clicksword}>
+        <button type="button" style={{ width: '15%', border: 'none', backgroundColor: 'transparent' }} onClick={clicksword}>
           <h2>1000 de dano</h2>
-          <img src={sword} alt="Sword" style={{ width: '200px' }} />
+          <img src={sword} alt="Sword" style={{ width: '100%' }} />
         </button>
-        <button type="button" style={{ width: '300px', border: 'none', backgroundColor: 'transparent' }} onClick={clickaxel}>
+        <button type="button" style={{ width: '15%', border: 'none', backgroundColor: 'transparent' }} onClick={clickaxel}>
           <h2>1100 de dano</h2>
-          <img src={axel} alt="Axel" style={{ width: '200px' }} />
+          <img src={axel} alt="Axel" style={{ width: '100%' }} />
         </button>
-        <button type="button" style={{ width: '300px', border: 'none', backgroundColor: 'transparent' }} onClick={clickstaff}>
+        <button type="button" style={{ width: '15%', border: 'none', backgroundColor: 'transparent' }} onClick={clickstaff}>
           <h2>1200 de dano</h2>
-          <img src={staff} alt="Staff" style={{ width: '200px' }} />
+          <img src={staff} alt="Staff" style={{ width: '100%' }} />
         </button>
 
       </div>
