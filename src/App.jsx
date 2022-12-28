@@ -1,4 +1,3 @@
-/* eslint-disable react/jsx-no-constructed-context-values */
 import { Stack } from '@mui/material';
 import Routes from 'routes';
 import React, { createContext, useState } from 'react';

@@ -18,7 +18,6 @@ function Home() {
         Iniciar jogo
       </Button>
       <Link to="/config">
-        {' '}
         <Typography variant="h4" color="#504F7F">Configurações</Typography>
       </Link>
     </Stack>
