@@ -1,5 +1,5 @@
+/* eslint-disable react/react-in-jsx-scope */
 /* eslint-disable no-nested-ternary */
-import React, { useState } from 'react';
 import lv3 from 'assets/armedDragonlv3.jpg';
 import lv5 from 'assets/armedDragonlv5.jpg';
 import lv7 from 'assets/armedDragonlv7.jpg';
@@ -8,12 +8,15 @@ import sword from 'assets/sword.png';
 import axel from 'assets/axel.png';
 import staff from 'assets/staff.png';
 import winner from 'assets/winner.png';
+import { Stack, Typography } from '@mui/material';
+import { useContext } from 'react';
+import { MonsterContext } from 'App';
+import { Link } from 'react-router-dom';
 
 function Cards() {
-  const [armedDg3, setArmedDg3] = useState(1200);
-  const [armedDg5, setArmedDg5] = useState(2400);
-  const [armedDg7, setArmedDg7] = useState(2800);
-  const [armedDg10, setArmedDg10] = useState(3000);
+  const {
+    armedDg3, setArmedDg3, armedDg5, setArmedDg5, armedDg7, setArmedDg7, armedDg10, setArmedDg10,
+  } = useContext(MonsterContext);
 
   const clicksword = () => {
     if (armedDg3 >= 0) {
@@ -51,7 +54,10 @@ function Cards() {
     }
   };
   return (
-    <div>
+    <Stack alignItems="center" mt="70px">
+      <Link to="/">
+        <Typography variant="p" color="#504F7F">Voltar tela inicial</Typography>
+      </Link>
       { armedDg3 >= 0
         ? (
           <div>
@@ -106,7 +112,7 @@ function Cards() {
         </button>
 
       </div>
-    </div>
+    </Stack>
   );
 }
 
