@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-no-constructed-context-values */
 import { Stack } from '@mui/material';
 import Routes from 'routes';
 import React, { createContext, useState } from 'react';
@@ -11,10 +12,18 @@ function App() {
   const [armedDg10, setArmedDg10] = useState(3000);
 
   return (
-    // eslint-disable-next-line react/jsx-no-constructed-context-values
-    <MonsterContext.Provider value={{
-      armedDg3, setArmedDg3, armedDg5, setArmedDg5, armedDg7, setArmedDg7, armedDg10, setArmedDg10,
-    }}
+
+    <MonsterContext.Provider
+      value={{
+        armedDg3,
+        setArmedDg3,
+        armedDg5,
+        setArmedDg5,
+        armedDg7,
+        setArmedDg7,
+        armedDg10,
+        setArmedDg10,
+      }}
     >
       <Stack textAlign="center">
         <Routes />
