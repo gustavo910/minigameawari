@@ -52,7 +52,7 @@ function App() {
         xp1, setXp1,
         xp5, setXp5,
         xp7, setXp7,
-        xp10, setXp10
+        xp10, setXp10,
       }}
     >
       <Stack textAlign="center">
