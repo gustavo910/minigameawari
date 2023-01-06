@@ -7,26 +7,29 @@ import { Link } from 'react-router-dom';
 
 function Config() {
   const {
-    setArmedDg3, setArmedDg5, setArmedDg7, setArmedDg10,
+    armedDg3, armedDg5, armedDg7, armedDg10,
+    setXp1,
+    setXp5,
+    setXp7,
+    setXp10
   } = useContext(MonsterContext);
 
   function configPower(dificult) {
     if (dificult === 'Easy') {
-      setArmedDg3(1200);
-      setArmedDg5(2400);
-      setArmedDg7(2800);
-      setArmedDg10(3000);
+      setXp1(armedDg3.xp);
+      setXp5(armedDg5.xp);
+      setXp7(armedDg7.xp);
+      setXp10(armedDg10.xp);
     } else if (dificult === 'Medium') {
-      console.log('passou aqui');
-      setArmedDg3(1200 * 2);
-      setArmedDg5(2400 * 2);
-      setArmedDg7(2800 * 2);
-      setArmedDg10(3000 * 2);
+      setXp1(armedDg3.xp * 2);
+      setXp5(armedDg5.xp * 2);
+      setXp7(armedDg7.xp * 2);
+      setXp10(armedDg10.xp * 2);
     } else if (dificult === 'Hard') {
-      setArmedDg3(1200 * 3);
-      setArmedDg5(2400 * 3);
-      setArmedDg7(2800 * 3);
-      setArmedDg10(3000 * 3);
+      setXp1(armedDg3.xp * 3);
+      setXp5(armedDg5.xp * 3);
+      setXp7(armedDg7.xp * 3);
+      setXp10(armedDg10.xp * 3);
     }
   }
 
