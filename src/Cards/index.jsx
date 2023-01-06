@@ -99,7 +99,7 @@ function Cards() {
               )
               : (
                 <div>
-                  <h1>Parabéns você matou todos dragões</h1>
+                  <h1>Volte e escolha a dificuldade que deseja jogar</h1>
                   <img src={winner} alt="Vencedor" style={{ width: '15%', height: '30%' }} />
                 </div>
               )}
