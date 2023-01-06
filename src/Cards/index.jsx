@@ -104,7 +104,7 @@ function Cards() {
                 </div>
               )}
       <div>
-        <h2>Você deve causar mais dano que o ataque do dragão</h2>
+        <h2>Você deve dar dano suficiente para matar os monstros</h2>
         <button type="button" style={{ width: '15%', border: 'none', backgroundColor: 'transparent' }} onClick={clicksword}>
           <h2>100 de dano</h2>
           <img src={sword} alt="Sword" style={{ width: '100%' }} />
